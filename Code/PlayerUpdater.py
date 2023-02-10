@@ -95,6 +95,7 @@ def main():
             auth_token = generate_fake_id()
             response = update_music_player(mac_address, client_id, auth_token)
             print(response)
+            print("---------------------------------")
 
 if __name__ == "__main__":
     main()
