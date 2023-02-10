@@ -3,6 +3,7 @@ import requests
 import requests_mock
 import random
 import uuid
+import argparse
 
 fake_response_200 = {
     "statusCode": 200,
@@ -79,8 +80,12 @@ def update_music_player(mac_address, client_id, auth_token):
     return response
 
 def main():
+    # Use argparse to parse the command line arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument("filename", help="The name of the .csv file containing the music players")
+    args = parser.parse_args()
     # Read the .csv file
-    with open("music_players.csv") as file:
+    with open(args.filename) as file:
         reader = csv.reader(file)
         next(reader) # skip the header row
         for row in reader:
