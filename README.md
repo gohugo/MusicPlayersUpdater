@@ -17,3 +17,11 @@ Run the command:
 ```
 python PlayerUpdater.py [name of your csv input File]
 ```
+Example:
+```
+python PlayerUpdater.py music_players.csv 
+```
+The result you will see will be  in this order
+1. The Call to the API
+2. The Detailed Response from the API with Status Code
+It will look like this: ![image](https://user-images.githubusercontent.com/14093695/218225079-499c01ea-7d00-4454-8b7a-7d6a660f4a29.png)
