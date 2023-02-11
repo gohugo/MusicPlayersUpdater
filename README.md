@@ -26,7 +26,7 @@ The result you will see will be  in this order
 2. The Detailed Response from the API with Status Code
 It will look like this: ![image](https://user-images.githubusercontent.com/14093695/218225079-499c01ea-7d00-4454-8b7a-7d6a660f4a29.png)
 # Technical decisions and assumptions
-##Technical decisions
+## Technical decisions
 I decided to make it a simple command line tool so it can be used in the command line or called in other programs. I used request-mock to fake the call and response to the API. I decided that since this is a test, I don't need to handle the fact that the authentification token would expire in real life.
 
 Because this is  a simple tool,  I did not feel there was any place in  the code where it was worth doing unit tests
